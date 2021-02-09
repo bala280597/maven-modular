@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: foo
-      uses: actions/build@v1
+      uses: actions/bala1@v1
       with:
         mavencycle: 'package'
     
