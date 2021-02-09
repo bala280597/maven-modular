@@ -1,0 +1,19 @@
+name: poc
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: maven
+    steps:
+    - uses: actions/checkout@v2
+    - id: foo
+      uses: actions/build@v1
+      with:
+        mavencycle: 'package'
+    
