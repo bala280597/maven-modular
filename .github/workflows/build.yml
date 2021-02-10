@@ -16,7 +16,7 @@ jobs:
       with:
         java-version: 1.8
     - id: foo
-      uses: bala280597/bala1@v1
+      uses: bala280597/bala1@v2
       with:
         mavencycle: 'package'
     
